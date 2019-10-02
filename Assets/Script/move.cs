@@ -19,8 +19,8 @@ public class move : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");//a/d or left/right
         float vertical = Input.GetAxis("Vertical");//w/s or up/down
 
-        myInput = vertical * transform.right;
-        myInput += -horizontal * transform.forward;
+        myInput = vertical * transform.forward;
+        myInput += horizontal * transform.right;
     }
     private void FixedUpdate()
     {
